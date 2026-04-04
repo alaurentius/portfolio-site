@@ -5,5 +5,30 @@
     "projects": "Proyectos",
     "skills": "Habilidades",
     "contact": "Contacto"
+  },
+  "sections": {
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "contact": {
+    "name": "Nombre",
+    "namePlaceholder": "Tu nombre",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "tu@correo.com",
+    "message": "Mensaje",
+    "messagePlaceholder": "¿En qué puedo ayudarte?",
+    "submit": "Enviar mensaje",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado! Me pondré en contacto contigo pronto.",
+    "errorRequired": "Este campo es obligatorio.",
+    "errorEmail": "Introduce un correo electrónico válido."
+  },
+  "about": {
+    "subtitle": "QA Engineer / SDET",
+    "bio1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "bio2": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
   }
 }

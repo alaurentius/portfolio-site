@@ -1,12 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 const NAV_SECTIONS = ["about", "experience", "projects", "skills", "contact"] as const;
 
 export default function Navbar() {
   const t = useTranslations("nav");
+  const locale = useLocale();
+  const alternateLocale = locale === "es" ? "en" : "es";
 
   return (
     <header data-testid="navbar" className="sticky top-0 z-50 bg-white border-b border-zinc-200">
@@ -27,9 +29,18 @@ export default function Navbar() {
               </a>
             </li>
           ))}
+          <li>
+            <Link
+              href={`/${alternateLocale}`}
+              data-testid="lang-switcher"
+              className="text-sm font-medium text-zinc-600 hover:text-zinc-900 transition-colors border border-zinc-300 rounded px-2 py-1"
+            >
+              {alternateLocale.toUpperCase()}
+            </Link>
+          </li>
         </ul>
 
-        {/* Mobile: nav links apilados (hamburger en Fase 4 si se decide) */}
+        {/* Mobile */}
         <ul className="flex sm:hidden items-center gap-4">
           {NAV_SECTIONS.map((section) => (
             <li key={section}>
@@ -42,6 +53,15 @@ export default function Navbar() {
               </a>
             </li>
           ))}
+          <li>
+            <Link
+              href={`/${alternateLocale}`}
+              data-testid="lang-switcher"
+              className="text-xs font-medium text-zinc-600 hover:text-zinc-900 border border-zinc-300 rounded px-2 py-0.5"
+            >
+              {alternateLocale.toUpperCase()}
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>

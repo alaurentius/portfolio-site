@@ -5,5 +5,30 @@
     "projects": "Projects",
     "skills": "Skills",
     "contact": "Contact"
+  },
+  "sections": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "contact": {
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "you@email.com",
+    "message": "Message",
+    "messagePlaceholder": "How can I help you?",
+    "submit": "Send message",
+    "sending": "Sending...",
+    "success": "Message sent! I'll get back to you soon.",
+    "errorRequired": "This field is required.",
+    "errorEmail": "Please enter a valid email address."
+  },
+  "about": {
+    "subtitle": "QA Engineer / SDET",
+    "bio1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "bio2": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
   }
 }
