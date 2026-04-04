@@ -14,4 +14,15 @@ const config: Config = {
   },
 };
 
-export default createJestConfig(config);
+// next/jest overrides transformIgnorePatterns, so we merge after resolution
+const jestConfig = createJestConfig(config);
+
+export default async () => {
+  const resolved = await jestConfig();
+  return {
+    ...resolved,
+    transformIgnorePatterns: [
+      "/node_modules/(?!(next-intl|use-intl|@formatjs)/)",
+    ],
+  };
+};
