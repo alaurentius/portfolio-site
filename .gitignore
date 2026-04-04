@@ -1,6 +1,30 @@
-*.md
-!readme.md
-!README.md
-start.txt
+# Dependencies
+/node_modules
 
+# Next.js build output
+/.next/
+/out/
 
+# Environment variables — never commit these
+.env.local
+.env*.local
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Testing
+/coverage
+/playwright-report
+/test-results
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Local reference docs (not for repo)
+build-details.md
