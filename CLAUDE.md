@@ -21,6 +21,10 @@ Personal portfolio and resume site for a QA Engineer / SDET. Single-page static 
 - **Hosting:** GitHub Pages
 - **CI/CD:** GitHub Actions
 
+## IMPORTANT
+
+- NEVER install any package that includes `axios` as a dependency (direct or transitive). Use the native `fetch` API instead.
+
 ## Rules
 
 - Follow `architecture.md` decisions. Propose changes before implementing.
